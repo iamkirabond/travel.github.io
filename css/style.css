@@ -3,16 +3,16 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
 .container{
-    width: 100%;
-    padding: 0 124px;
+    width: 1688px;
+    margin: 0 auto;
 }
-
 div, p, form, input, a, span, button{
-	box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
 }
-
 p{
     margin: 0;
     padding: 0;
@@ -20,24 +20,20 @@ p{
     line-height: 1.6em;
     letter-spacing: 0.02em;
 }
-
 ul, li{
 	display: block;
 	padding: 0;
     margin: 0;
     text-decoration: none;
 }
-
 h1, h2, h3, h4, h5, h6{
 	padding: 0;
 	margin: 0;
 }
-
 a{
     text-decoration: none;
     transition: 0.25s ease;
 }
-
 .btn{
     display: block;
     width: 294px;
@@ -104,7 +100,7 @@ a{
 }
 .social{
     position: absolute;
-    right: -227px;
+    right: -330px;
     bottom: 45%;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -156,6 +152,7 @@ a{
     max-width: 645px;
     width: 100%;
     margin-bottom: 43px;
+    text-transform: uppercase;
 }
 .about-us__description{
     font-size: 22px;
@@ -178,4 +175,325 @@ a{
     color: #fff;
     background: #000;
 }
+.about .container img{
+    box-shadow: #afa6a6 -1px -3px 15px 0px;
+}
 /* About End */ 
+
+
+/* Photos */
+.photos{
+    padding-top: 110px;
+}
+.photos .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.photos__title{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.235em;
+}
+.photos__desc{
+    margin-top: 19px;
+    font-weight: 500;
+    font-size: 28px;
+    max-width: 1032px;
+    width: 100%;
+    text-align: center;
+    color: #5b5b5c;
+    letter-spacing: 0.14em;
+    line-height: 1.3em;
+    margin-bottom: 93px;
+}
+.photo__slider{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.photo__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.photo__slider .photo__content img:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+.photo__slider .photo__content img{
+    margin-bottom: 35px;
+}
+.photo__navigation{
+    margin-top: 77px;
+    font-weight: 500;
+    font-size: 30px;
+    color: #c4c4c4;  
+}
+.photo__navigation span{
+    font-weight: 500;
+    font-size: 30px;
+    color: #c4c4c4;  
+    letter-spacing: 0.2em;
+    margin: 0 35px;
+    line-height: 1.6em;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.photo__navigation span:hover{
+    color: #000;
+}
+.photo__btn{
+    background: none;
+    border: none;
+    padding: 0;
+}
+.photo__btn img{
+    margin-bottom: -8px;
+}
+/* Photos End */
+
+/* Blog */
+.blog{
+    padding-top: 154px;
+    padding-bottom: 159px;
+}
+.blog .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog__title{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.235em;
+}
+.blog__desc{
+    margin-top: 19px;
+    font-weight: 500;
+    font-size: 28px;
+    max-width: 1032px;
+    width: 100%;
+    text-align: center;
+    color: #5b5b5c;
+    letter-spacing: 0.14em;
+    line-height: 1.3em;
+    margin-bottom: 63px;
+}
+.blog__cardholder{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.blog-card{
+    max-width: 820px;
+    width: 100%;
+}
+.blog-card__content{
+    margin-top: 57px;
+}
+.blog-card__title{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+.blog-card__text{
+    margin-top: 37px;
+    font-size: 19px;
+    color: #848484;
+    max-width: 700px;
+    width: 100%;
+    letter-spacing: 0.2em;
+    line-height: 2.2em;
+    margin-bottom: 67px;
+}
+.blog-card__btn{
+    max-width: 223px;
+    width: 100%;
+    background: #dddcdc;
+    font-size: 16px;
+    color: #000;
+    height: 62px;
+    padding-top: 5px;
+    letter-spacing: 0.25em;
+}
+/* Blog End */
+
+/* Adventure */
+.adventure .container{
+    display: flex;
+    justify-content: space-between;
+}
+.adventure__content{
+    max-width: 820px;
+    width: 100%;
+    margin-top: 178px;
+    margin-right: 31px;
+}
+.adventure__section-name{
+    color: #c4c4c4;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.13em;
+    margin-bottom: 19px;
+}
+.adventure__section-title{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    max-width: 645px;
+    width: 100%;
+    margin-bottom: 43px;
+    text-transform: uppercase;
+}
+.adventure__description{
+    font-size: 22px;
+    color: #5b5b5c;
+    letter-spacing: 0.14em;
+    line-height: 1.2em;
+    margin-left: -4px;
+    margin-bottom: 49px;
+}
+.adventure .container img{
+    box-shadow: #afa6a6 -1px -3px 15px 0px;
+}
+/* Adventure End */
+
+/* Discounter */
+.discounter{
+    background-color: #f4f4f4;
+    padding: 150px 0;
+}
+.discounter-form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-right: 40px;
+}
+.discounter .container{
+    display: flex;
+    justify-content: space-between;
+}
+.discounter__content{
+    margin-left: 40px;
+}
+.discounter__title{
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.14em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.discounter__text{
+    color: #5b5b5c;
+    letter-spacing: 0.14em;
+    font-size: 18px;
+}
+.discounter-form__input{
+    border: 2px solid #7a7a7a;
+    background-color: #f4f4f4;
+    height: 70px;
+    width: 305px;
+    padding-left: 30px;
+    margin-right: 60px;
+}
+.discounter-form__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 22px;
+    color: #3a4047;
+    letter-spacing: 0.15em;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.discounter-form__input::-moz-placeholder { /* Firefox 19+ */
+    font-size: 22px;
+    color: #3a4047;
+    letter-spacing: 0.15em;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .4s ease;
+    line-height: 22px;
+}
+.discounter-form__input:-ms-input-placeholder { /* IE 10+ */
+    font-size: 22px;
+    color: #3a4047;
+    letter-spacing: 0.15em;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .4s ease;
+}
+.discounter-form__input:-moz-placeholder { /* Firefox 18- */
+    font-size: 22px;
+    color: #3a4047;
+    letter-spacing: 0.15em;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .4s ease;
+}
+.discounter-form__input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+.discounter-form__input:focus:-moz-placeholder {
+    opacity: 0;
+}
+.discounter-form__input:focus::-moz-placeholder {
+    opacity: 0;
+}
+.discounter-form__input:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+.discounter-form__btn{
+    background: #3a4047;
+    border: 2px solid #7a7a7a;
+    text-transform: uppercase;
+    width: 245px;
+    height: 70px;
+    padding-top: 0;
+    letter-spacing: 0.17em;
+    font-size: 22px;
+}
+/* Discounter End */
+
+/* Footer */
+.footer{
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+.footer .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 585px;
+    width: 100%;
+}
+.footer-menu__item a{
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+.footer-menu__item{
+    margin-right: 50px;
+}
+.footer-menu__item:last-child{
+    margin-right: 0;
+}
+.footer-text{
+    margin-top: 54px;
+    text-transform: uppercase;
+    text-align: center;  
+}
+.footer-text__name{
+    font-size: 18px;
+    letter-spacing: 0.35em;
+}
+.footer-text__rights{
+    font-size: 18px;
+    letter-spacing: 0.14em;
+}
+/* Footer End */

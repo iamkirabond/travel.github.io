@@ -54,7 +54,7 @@ a{
 }
 /* Header*/
 .header{
-    background: url(/img/home.png) center no-repeat;
+    background: url(../img/home.png) center no-repeat;
     background-size: cover;
     position: relative;
     padding-top: 40px;
